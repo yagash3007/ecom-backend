@@ -10,6 +10,7 @@ cart.get("/", userRoleMiddleware, cart_services.getAllCarts);
 cart.get("/:id", userRoleMiddleware, cart_services.getCartByUserId);
 cart.put("/updatecart/", userRoleMiddleware, cart_services.updateCartByUserId);
 cart.put("/", cart_services.removeProductFromCart);
+cart.delete("/:id", cart_services.deleteCartByUserId);
 
 // cart.delete(
 //   "/cart/:cartId/items/:itemId",
