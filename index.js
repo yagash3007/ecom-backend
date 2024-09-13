@@ -9,7 +9,7 @@ const category = require("./API/category_api");
 const Cart = require("./API/card_api");
 const wishlist = require("./API/wishlist_api");
 
-const login = require("../ecommers_backend/login_api/login");
+const login = require("./login_api/login");
 const { logout } = require("./services/user_services");
 const adminRoutes = require("./API/admin");
 
