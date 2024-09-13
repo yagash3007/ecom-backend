@@ -9,7 +9,9 @@ const mongoose = require("mongoose");
 const connect_db = async () => {
   try {
     mongoose
-      .connect("mongodb://localhost:27017/ecommerce")
+      .connect(
+        "mongodb+srv://yagashkannan0003:rVXQm9UceaAHUXH9@ecomyagash.0s4pr.mongodb.net/ecommerce"
+      )
       .then(console.log("connected"));
   } catch (error) {
     console.log(error.message);
